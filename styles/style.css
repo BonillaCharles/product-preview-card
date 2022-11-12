@@ -1,0 +1,136 @@
+/* Global Reset */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0 8px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 340px;
+    min-height: 620px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #fff;
+    border-radius: 16px;
+    margin: 12px;
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.card-category,
+.card-title,
+.card-text,
+.price {
+    padding: 0px 16px;
+}
+
+.card-category,
+.btn {
+    font: normal 1rem 'Montserrat', sans-serif;
+}
+
+.card-category {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.card-title {
+    font: normal bold 2.2rem/1 'Fraunces', serif;
+}
+
+.card-text {
+    font: normal 1.04rem/1.5 'Montserrat', sans-serif;
+    /* text-align: justify; */
+}
+
+.price {
+    font: normal 1rem/1 'Fraunces', serif;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.discount {
+    font: normal 700 2rem/1 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.original {
+    text-decoration: line-through;
+    margin-left: 16px;
+}
+
+.btn {
+    height: 54px;
+    width: 90%;
+    align-self: center;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin: 12px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 20%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 620px;
+        min-height: 340px;
+        flex-flow: row nowrap;
+    }
+
+    .card-img {
+        content: url(../images/image-product-desktop.jpg);
+        border-radius: 16px 0 0 16px;
+    }
+
+    .card {
+        width: 81%;
+        margin: 12px;
+    }
+
+    .price {
+        justify-content: space-evenly;
+    }
+}
