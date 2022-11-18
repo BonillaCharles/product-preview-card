@@ -29,7 +29,7 @@ body {
     flex-flow: column nowrap;
     background-color: #fff;
     border-radius: 16px;
-    margin: 12px;
+    margin: 20px auto;
 }
 
 .card-img {
@@ -68,7 +68,6 @@ body {
 
 .card-text {
     font: normal 1.04rem/1.5 'Montserrat', sans-serif;
-    /* text-align: justify; */
 }
 
 .price {
